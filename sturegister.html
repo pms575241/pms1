@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="utf-8">
+	<title>Student Registration</title>
+	<style>
+		body
+		{
+			background-image: linear-gradient(to bottom,#E6E6FA,#FFB6C1);
+			background-repeat: no-repeat;
+		}
+		.container
+		{
+			margin-left: 400px;
+			border: 1px solid grey;
+			width: 700px;
+			padding: 20px;
+			text-align: center;
+			background-color: white;
+			background-repeat: no-repeat;
+			border-radius: 5px;
+		}
+		hr
+		{
+			border: 2px solid black;
+		}
+		.leftmargin
+		{
+			text-align: left;
+		}
+		label
+		{
+			color: #3d3d29;
+			font-weight: bold;
+			font-size: 18px;
+			text-align: left;
+		}
+		input
+		{
+			border-radius: 5px;
+			width: 300px;
+			margin: 5px 0;
+			display: inline-block;
+			padding: 10px 10px;
+			height: 20px;
+			border: 1px solid grey;
+			font-size: 15px
+		}
+		select
+		{
+			color: grey;
+			border-radius: 5px;
+			width: 320px;
+			height: 40px;
+			margin: 5px 0;
+			display: inline-block;
+			padding: 10px 10px;
+			border: 1px solid grey
+			font-size: 15px;
+		}
+		button
+		{
+			border-radius: 5px;
+			background-color: black;
+			color: white;
+			font-size: 15px;
+			padding: 10px;
+			width: all;
+		}
+		.cen
+		{
+			text-align: center;
+		}	
+		.cen button:hover{
+			background-color: grey;
+		}
+		.nav-area{
+			margin-top: 100px;
+			float: right;
+			margin-right: 10px;
+			list-style: none;
+		}
+		.nav-area li{
+			display: inline-block;
+		}
+		.nav-area li a{
+			color: black;
+			transition: background-color .5s;
+			text-decoration: none;
+			padding: 10px 10px;
+			font-family: inherit;
+			font-size: 25px;
+		}
+		.nav-area li a:hover {
+			background-color: grey;
+			
+		}
+		a{
+			text-decoration: none;
+			color: white;
+		}
+	</style>
+</head>
+<body>
+		<div style="margin-top: 10px; margin-left: 20px; float: left;">
+			<h1 style="font-size:40px;"><b>Project Management System</b></h1>
+			<h3 style="font-size: 25px;"><b>Create | Upload | Approve</b></h3>
+		</div>
+		<ul class="nav-area">
+			<li><a href="index.html">Home</a></li>&nbsp;|&nbsp;
+				<li><a href="about.html">About</a></li>&nbsp;|&nbsp;
+				<li><a href="contactus.html">Contact</a></li>
+		</ul>
+		<div style="clear: both;"></div>
+	<div class="container">
+		<h1>Registration</h1>
+		<hr><br>
+		<div class="leftmargin">
+			<form>
+				<div style="float: left;">
+				<label>Full Name : </label>   <br>
+		        <input type="text" name="fullname" id="fullname" size="34" placeholder="Enter your full name" required>
+		        <br><br>
+
+				<label>PRN : </label>   <br>
+		        <input type="text" name="prn" id="prn" size="41" placeholder="Enter your PRN" required>
+		        <br><br>
+				
+				<label>Email-Id : </label><br>
+		        <input type="email" name="email" id="email" size="36" placeholder="Enter your email-id" name="email" required>
+		        <br><br>
+		        
+		        <label>Mobile No. : </label><br>
+		        <input type="text" name="mbno" id="mbno" size="33" placeholder="Enter your mobile no." name="mbno" required>
+		        <br><br>
+		       
+		        </div>
+		        <div style="float: right;">
+		        <label for="department">Department : </label> <br>  
+		        <select name="department" id="department">
+		        	<option value="cse">Computer Science and Engineering</option>
+		        	<option value="it">Information Technology</option>
+		        	<option value="ce">Civil Engineering</option>
+		        	<option value="me">Mechanical Engineering</option>
+		        	<option value="ele">Electrical Engineering</option>
+		        	<option value="ene">Electronics Engineering</option>
+		        	<option value="cee">Civil Environmental Engineering</option>
+		        	<option value="csen">Civil Structural Engineering</option>
+		        	<option value="mde">Mechanical Design Engineering</option>
+		        	<option value="mhpe">Mechanical Heat Power Engineering</option>
+		        	<option value="mpe">Mechanical Production Engineering</option>
+		        	<option value="csys">Control System Engineering</option>
+		        	<option value="psys">Power System Engineering</option>
+		        	<option value="cseit">Computer Science and Information Technology</option>
+		        </select>
+		        <br><br>
+		        <label for="year">Year of study : </label><br>
+		        <select name="year" id="year">
+		        	<option value="SY">SY</option>
+		        	<option value="TY">TY</option>
+		        	<option value="BTech">B.Tech</option>
+		        	<option value="MTech">M.Tech</option>
+		        </select>
+		        <br><br>
+		        <label>Team Name : </label>   <br>
+		        <input type="text" name="username" size="33" id="username" placeholder="Enter your team name" required>
+		        <br><br>
+
+		        <label>Password : </label>  <br> 
+		        <input type="password" name="password" id="password" size="35" placeholder="Set your password" required>
+		        <br><br>
+		       	</div>
+		        <div style="clear: both;"></div>
+		        <br>
+		        <div class="cen">
+		        	<button><a href="stulogin.html">Back</a></button>
+		        	<button type="submit">Register</button>
+		        </div>
+			</form>
+		</div>
+	</div>
+</body>
+</html>

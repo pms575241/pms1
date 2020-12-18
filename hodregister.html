@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="utf-8">
+	<title>HOD Registration</title>
+	<style>
+		body
+		{
+			
+			background-image: linear-gradient(to bottom,#E6E6FA,#FFB6C1);
+			background-repeat: no-repeat;
+		}
+		.container
+		{
+			margin-left: 500px;
+			border: 1px solid grey;
+			width: 400px;
+			padding: 20px;
+			text-align: center;
+			background-color: white;
+			background-repeat: no-repeat;
+			border-radius: 5px;
+		}
+		hr
+		{
+			border: 2px solid black;
+		}
+		.leftmargin
+		{
+			text-align: left;
+		}
+		label
+		{
+			color: #3d3d29;
+			font-weight: bold;
+			font-size: 18px;
+			text-align: left;
+		}
+		input
+		{
+			border-radius: 5px;
+			width: 380px;
+			margin: 5px 0;
+			display: inline-block;
+			padding: 10px 10px;
+			height: 20px;
+			border: 1px solid grey;
+			font-size: 15px
+		}
+		select
+		{
+			color: grey;
+			border-radius: 5px;
+			width: 400px;
+			height: 40px;
+			margin: 5px 0;
+			display: inline-block;
+			padding: 10px 10px;
+			border: 1px solid grey
+			font-size: 15px;
+		}
+		button
+		{
+			border-radius: 5px;
+			background-color: black;
+			color: white;
+			font-size: 15px;
+			padding: 10px;
+			width: all;
+		}
+		.cen
+		{
+			text-align: center;
+		}
+		.cen button:hover{
+			background-color: grey;
+		}
+		.nav-area{
+			margin-top: 100px;
+			float: right;
+			margin-right: 10px;
+			list-style: none;
+		}
+		.nav-area li{
+			display: inline-block;
+		}
+		.nav-area li a{
+			color: black;
+			transition: background-color .5s;
+			text-decoration: none;
+			padding: 10px 10px;
+			font-family: inherit;
+			font-size: 25px;
+		}
+		.nav-area li a:hover {
+			background-color: grey;
+			
+		}
+		a{
+			text-decoration: none;
+			color: white;
+		}
+	</style>
+</head>
+<body>
+	<div style="margin-top: 10px; margin-left: 20px; float: left;">
+			<h1 style="font-size:40px;"><b>Project Management System</b></h1>
+			<h3 style="font-size: 25px;"><b>Create | Upload | Approve</b></h3>
+		</div>
+		<ul class="nav-area">
+			<li><a href="index.html">Home</a></li>&nbsp;|&nbsp;
+				<li><a href="about.html">About</a></li>&nbsp;|&nbsp;
+				<li><a href="contactus.html">Contact</a></li>
+		</ul>
+		<div style="clear: both;"></div>
+	<div class="container">
+		<h1>Registration</h1>
+		<hr><br>
+		<div class="leftmargin">
+			<form>
+		        <label>Full Name : </label>   
+		        <input type="text" name="fullname" id="fullname" size="33" placeholder="Enter Full Name" required>
+		        <br><br>
+		        <label for="department">Department : </label>   
+		        <select name="department" id="department">
+		        	<option value="cse">Computer Science and Engineering</option>
+		        	<option value="it">Information Technology</option>
+		        	<option value="ce">Civil Engineering</option>
+		        	<option value="me">Mechanical Engineering</option>
+		        	<option value="ele">Electrical Engineering</option>
+		        	<option value="ene">Electronics Engineering</option>
+		        	<option value="cee">Civil Environmental Engineering</option>
+		        	<option value="csen">Civil Structural Engineering</option>
+		        	<option value="mde">Mechanical Design Engineering</option>
+		        	<option value="mhpe">Mechanical Heat Power Engineering</option>
+		        	<option value="mpe">Mechanical Production Engineering</option>
+		        	<option value="csys">Control System Engineering</option>
+		        	<option value="psys">Power System Engineering</option>
+		        	<option value="cseit">Computer Science and Information Technology</option>
+		        </select>
+		        <br><br>
+		        <label>Email-Id : </label>
+		        <input type="email" name="email" id="email" size="34" placeholder="Enter Email" name="email" required>
+		        <br><br>
+		        <label>Mobile No. : </label>
+		        <input type="text" name="mbno" id="mbno" size="32" placeholder="Enter Mobile No." name="mbno" required>
+		        <br><br>
+		        <label>Password : </label>  <br> 
+		        <input type="password" name="password" id="password" size="35" placeholder="Set your password" required>
+		        <br><br>
+		        <div class="cen">
+		        	<button><a href="hodlogin.html">Back</a></button>
+		        	<button type="submit">Register</button>
+		        </div>
+			</form>
+		</div>
+	</div>
+</body>
+</html>
